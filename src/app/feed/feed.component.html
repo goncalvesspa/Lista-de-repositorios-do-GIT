@@ -1,9 +1,13 @@
 <p>feed works!</p>
 
+
+
 <h1 *ngFor = "let gitlist of gitlist">
-    {{gitlist?.login}}
+   <!--  {{gitlist?.login}}
     {{gitlist?.id}} 
     {{gitlist?.owner.login}}
-    {{gitlist?.owner.id}}
+    {{gitlist?.owner.id}} -->
+    {{gitlist?.full_name}}
+    
 </h1>
 

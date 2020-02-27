@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MatSliderModule } from '@angular/material/slider';
+
+import {MatMenuModule} from '@angular/material/menu';
 
 import { RouterModule } from '@angular/router';
 
@@ -9,6 +12,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 
 import { FeedModule } from './feed/feed.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,10 @@ import { FeedModule } from './feed/feed.module';
     BrowserModule,
     FeedModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatSliderModule,
+    MatMenuModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
